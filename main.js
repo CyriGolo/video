@@ -61,8 +61,8 @@ resume.addEventListener('click',()=>{
 })
 
 skip.addEventListener('click',()=>{
-  bar.value += 10;
-  video.currentTime += 10;
+  bar.value = parseInt(bar.value) + 10;
+  video.currentTime = parseInt(video.currentTime) + 10;
 })
 
 volume.addEventListener('click',()=>{
@@ -86,8 +86,8 @@ window.addEventListener('keydown', (e)=>{
   if(e.key == " ") {
     pauseOrPlay()
   } else if(e.key == "ArrowRight") {
-    bar.value += 10;
-    video.currentTime += 10;
+    bar.value = parseInt(bar.value) + 10;
+    video.currentTime = parseInt(video.currentTime) + 10;
   } else if(e.key == "ArrowLeft") {
     bar.value -= 10;
     video.currentTime -= 10;
@@ -96,7 +96,7 @@ window.addEventListener('keydown', (e)=>{
     video.volume = controlVolume.value / 100;
     volumeIco()
   } else if(e.key == "ArrowDown") {
-    controlVolume.value = parseInt(controlVolume.value) - 10;
+    controlVolume.value -= 10;
     video.volume = controlVolume.value / 100;
     volumeIco()
   }
