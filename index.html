@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer async></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+</head>
+<body>
+  <main>
+    <article class="video">
+      <video src="public/video1.mp4"></video>
+      <div class="bar">
+        <div class="container">
+          <div class="left"></div>
+        </div>
+        <input type="range" class="progress-bar" value="0" max="100">
+        <p>0:00</p>
+      </div>
+      <div class="control">
+        <button class="play">
+          <iconify-icon class="paused" icon="solar:play-bold" width="55" height="55" style="color: white"></iconify-icon>
+          <iconify-icon class="played" icon="material-symbols:pause" width="55" height="55"  style="color: white"></iconify-icon>
+        </button>
+        <button class="ten-before">
+          <iconify-icon icon="ic:baseline-replay-10" width="55" height="55" style="color: white"></iconify-icon>
+        </button>
+        <button class="ten-after">
+          <iconify-icon icon="ic:baseline-forward-10" width="55" height="55" style="color: white"></iconify-icon>
+        </button>
+        <div class="volume">
+          <input type="range" class="volume-control" value="100" orient="vertical">
+          <button class="volume-ico">
+            <iconify-icon icon="gravity-ui:volume" width="55" height="55"  style="color: white" class="full"></iconify-icon>
+            <iconify-icon icon="gravity-ui:volume-low" width="55" height="55"  style="color: white" class="one"></iconify-icon>
+            <iconify-icon icon="gravity-ui:volume-off" width="55" height="55"  style="color: white" class="zero"></iconify-icon>
+            <iconify-icon icon="gravity-ui:volume-xmark" width="55" height="55"  style="color: white" class="mute"></iconify-icon>
+          </button>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
